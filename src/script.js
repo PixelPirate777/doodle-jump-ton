@@ -242,6 +242,26 @@ function init() {
 			if (player.vy < -7 && player.vy > -15) player.dir = "right_land";
 		}
 
+		// Adding click controls
+		document.onclick = function(e) {
+			var clickX = e.clientX;
+			var pageWidth = window.innerWidth;
+
+			if (clickX < pageWidth / 2) {
+				dir = "left";
+				player.vx = -3; // Move player slightly to the left
+			} else {
+				dir = "right";
+				player.vx = 3; // Move player slightly to the right
+			}
+		};
+
+		// Adding mouse up controls
+		document.onmouseup = function(e) {
+			player.vx = 0; // Stop player movement after click
+		};
+
+
 		//Adding keyboard controls
 		document.onkeydown = function(e) {
 			var key = e.keyCode;
@@ -581,6 +601,7 @@ function playerJump() {
 				reset();
 		}
 	};
+
 
 	document.onkeyup = function(e) {
 		var key = e.keyCode;
