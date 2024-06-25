@@ -29,7 +29,7 @@ var width = canvas.width,
 	height = canvas.height;
 
 window.Telegram.WebApp.isExpanded = true;
-window.Telegram.WebApp.headerColor = "#FFFFFF"
+window.Telegram.WebApp.headerColor = "#FFFFFF"; 
 
 // Other game variables and objects...
 
