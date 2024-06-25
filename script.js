@@ -6,14 +6,29 @@ window.requestAnimFrame = (function() {
 	};
 })();
 
-var canvas = document.getElementById('canvas'),
-	ctx = canvas.getContext('2d');
+// Get the canvas element and context
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
 
-var width = 422,
-	height = 552;
+// Function to resize the canvas
+function resizeCanvas() {
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	width = canvas.width;
+	height = canvas.height;
+}
 
-canvas.width = width;
-canvas.height = height;
+// Initial canvas size
+resizeCanvas();
+
+// Update canvas size on window resize
+window.onresize = resizeCanvas;
+
+// Variables for game
+var width = canvas.width,
+	height = canvas.height;
+
+// Other game variables and objects...
 
 //Variables for game
 var platforms = [],
