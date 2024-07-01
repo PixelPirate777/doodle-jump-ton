@@ -28,7 +28,7 @@ window.onresize = resizeCanvas;
 var width = canvas.width,
 	height = canvas.height;
 
-var scale = 2.0;
+var scale = 3.0;
 
 // Other game variables and objects...
 window.Telegram.WebApp.isExpanded = true;
