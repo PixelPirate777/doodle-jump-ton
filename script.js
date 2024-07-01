@@ -28,6 +28,8 @@ window.onresize = resizeCanvas;
 var width = canvas.width,
 	height = canvas.height;
 
+var scale = 2.0;
+
 // Other game variables and objects...
 window.Telegram.WebApp.isExpanded = true;
 window.Telegram.WebApp.headerColor = "#FFFFFF";
@@ -77,8 +79,8 @@ var Player = function() {
 	this.isMovingRight = false;
 	this.isDead = false;
 
-	this.width = 55;
-	this.height = 40;
+	this.width = 55 * scale;
+	this.height = 40 * scale;
 
 	//Sprite clipping
 	this.cx = 0;
@@ -118,8 +120,8 @@ player = new Player();
 //Platform class
 
 function Platform() {
-	this.width = 70;
-	this.height = 17;
+	this.width = 70 * scale;
+	this.height = 17 * scale;
 
 	this.x = Math.random() * (width - this.width);
 	this.y = position;
@@ -183,8 +185,8 @@ for (var i = 0; i < platformCount; i++) {
 
 //Broken platform object
 var Platform_broken_substitute = function() {
-	this.height = 30;
-	this.width = 70;
+	this.height = 30 * scale;
+	this.width = 70 * scale;
 
 	this.x = 0;
 	this.y = 0;
@@ -212,8 +214,8 @@ var spring = function() {
 	this.x = 0;
 	this.y = 0;
 
-	this.width = 26;
-	this.height = 30;
+	this.width = 26 * scale;
+	this.height = 30 * scale;
 
 	//Sprite clipping
 	this.cx = 0;
