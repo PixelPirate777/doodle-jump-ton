@@ -22,7 +22,7 @@ canvas {
 	height: 100%;
 	width: 100%;
 	display: block;
-	background: url(https://i.imgur.com/Y0BMP.png) top left;
+	background: url(https://i.ibb.co/1LDc0Wg/canvas-ton.png) top left;
 }
 
 #scoreBoard {
@@ -73,7 +73,7 @@ h3 a {color: #5a5816}
 .button {
 	width: 105px;
 	height: 31px;
-	background: url(https://i.imgur.com/2WEhF.png) 0 0 no-repeat;
+	background: url(https://i.ibb.co/8jN11mQ/doodle-ton.png) 0 0 no-repeat;
 	display: block;
 	color:  #000;
 	font-size: 12px;
@@ -93,7 +93,7 @@ h3 a {color: #5a5816}
 .info .key {
 	width: 16px;
 	height: 16px;
-	background: url(https://i.imgur.com/2WEhF.png) no-repeat;
+	background: url(https://i.ibb.co/8jN11mQ/doodle-ton.png) no-repeat;
 	text-indent: -9999px;
 	display: inline-block;
 }
